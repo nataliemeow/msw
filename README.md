@@ -39,3 +39,13 @@ Even though it's not quite LISP, it's similar in syntax as it uses [S-expression
 ### Metamacros with `*define`
 
 TODO
+
+## Installation
+
+After a 'considerable' amount of read-up on Python packaging, I quite possibly may have messed this up.
+
+1. Clone this repo with `git clone https://github.com/nataliemeow/ric-msw`.
+2. **If your environment is externally managed,** such as on Arch Linux: In the directory, create a virtual environment with `python3 -m venv .venv` and activate it with `. .venv/bin/activate`.
+3. Run `pip install .` to install the package.
+
+You should now be able to use the module with `python3 -m ric-msw`.
