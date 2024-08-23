@@ -1,0 +1,27 @@
+[project]
+name = "ric-msw"
+version = "0.1.0"
+authors = [
+	{ name = "nataliemeow", email = "razorlovesbaba@tuta.io" },
+]
+dependencies = [
+	"sexpdata"
+]
+description = "Language that compiles to Robot Is Chill macros"
+readme = "README.md"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/nataliemeow/msw"
+Issues = "https://github.com/nataliemeow/msw/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

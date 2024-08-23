@@ -1,0 +1,11 @@
+; vi:sw=2:ts=2:et:syn=clojure
+[(*define +    (add *1 *2))
+ (*define ^    (pow *1 *2))
+ (*define $    (load *1))
+ (*define =    (store *1 *2))
+ (*define loop (unescape (repeat *1 '[*2])))
+ (= i 0)
+ (loop 10
+   [(= i (+ ($ i) 1))
+    (int (^ ($ i) 2))
+    " "])]

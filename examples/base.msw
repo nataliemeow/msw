@@ -1,0 +1,19 @@
+; vi:sw=2:ts=2:et:syn=clojure
+; some base metamacros
+[(*define +    (add *1 *2))
+ (*define -    (subtract *1 *2))
+ (*define mul  (multiply *1 *2))
+ (*define /    (divide *1 *2))
+ (*define %    (mod *1 *2))
+ (*define ^    (pow *1 *2))
+ (*define ==   (equal *1 *2))
+ (*define <    (less *1 *2))
+ (*define <=   (or (< *1 *2) (== *1 *2)))
+ (*define >    (< *2 *1))
+ (*define >=   (or (> *1 *2) (== *1 *2))) ; nesting metamacros works!
+ (*define $    (load *1))
+ (*define $?   (get *1 *2))
+ (*define =    (store *1 *2))
+ (*define loop (unescape (repeat *1 '[*2])))
+ (*define uif  (unescape (if *1 '[*2] '[*3])))
+ (*define etry (try '[*1]))]

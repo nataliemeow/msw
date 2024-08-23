@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/ric-msw/__main__.py
+src/ric-msw/compile.py
+src/ric_msw.egg-info/PKG-INFO
+src/ric_msw.egg-info/SOURCES.txt
+src/ric_msw.egg-info/dependency_links.txt
+src/ric_msw.egg-info/requires.txt
+src/ric_msw.egg-info/top_level.txt
