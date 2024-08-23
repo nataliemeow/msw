@@ -1,5 +1,3 @@
-src/__pycache__/
-.env/
+src/ric-msw/__pycache__/
+src/ric_msw.egg-info/
 .venv/
-env/
-venv/
